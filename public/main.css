@@ -1,0 +1,342 @@
+.frame {
+   width: 100%;
+   height: 100%;
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   background-color: rgb(217, 212, 212);
+}
+.main_frame {
+   position: relative;
+   width: 1440px;
+   height: 1312px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin-top: 2px;
+   background-color:rgb(240, 240, 246);
+}
+.main_frame .left_frame {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 305px;
+   height: 1315px;
+   background-color: white;
+ }
+ 
+
+
+.left_frame-1 {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 228px;
+   height: 253px;
+   margin-left: 45px;
+   margin-right: 30px;
+   margin-top: 47px;
+   margin-bottom: 20px;
+ }
+.left_icons {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-direction: row;
+   width: 238px;
+   margin-top: 19px;  
+}
+.link_href {
+   text-decoration: none; 
+   color: black;
+}
+.icon { 
+   position: relative;
+   width: 25px;
+   height: 22.8px;
+   border-radius: 50%;
+   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+.icon-1 {
+   position: relative;
+   left: 29.17%;
+   right: 27%;
+   margin-top: 5.86px;
+}
+
+
+
+.left_frame-2 {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 221px;
+   height: 126px;
+   margin-left: 47px;
+   margin-right: 37px;
+ }
+ .left_2 {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.left_2_par { 
+   height: 24px;
+   font-weight: 400;
+   padding-left: 8px;
+   padding-right: 8px;
+   background-color: rgb(217, 244, 170)
+}
+
+
+
+ .left_frame-3 {
+   display: flex;
+   flex-direction: column;
+   width: 220px;
+   height: 153px;
+   margin-left: 47px;
+   margin-right: 38px;
+   justify-content: space-between;
+}
+.languages{
+   font-size: 18px;
+   font-weight: 500;
+   width: 95px;
+   height: 22px;
+   margin-bottom: 5px;
+}
+.language {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.which-language {
+   display: flex;
+   padding-right: 5px;
+}
+.language-level{
+   border-style: solid;
+      border-color: rgb(255, 180, 0);
+      border-width: 2px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+}
+
+
+
+.left_frame-4 {
+   position: relative;
+   margin-left: 35px;
+   margin-right: 34px;
+   display: flex;
+   flex-direction: column;
+   height: 242px;
+   width: 220px;
+  justify-content: space-between;
+
+}
+.skills{
+   font-size: 18px;
+   font-weight: 500;
+   width: 95px;
+   height: 22px;
+   margin-bottom: 5px;
+}
+.skillss{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.which-skill{
+   display: flex;
+   padding-right: 5px;
+   font-size: 15px;
+   font-weight: 400;
+}
+.skill-level{
+      border-style: solid;
+      border-color: rgb(255, 180, 0);
+      border-width: 2px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+}
+
+
+
+.left_frame-5 {
+   margin-left: 51px;
+   margin-right: 68px;
+   height: 148px;
+   width: 186px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+  
+}
+.left_5 {
+   display: flex;
+   flex-direction: row;
+}
+
+
+.left_marginer {
+   width: 220px;
+   height: 0px; 
+   border-style: solid;
+   border-width: 1px;
+   margin-bottom: 25px;
+   margin-top: 25px;
+   border-color: rgb(240, 240, 246);
+}
+
+
+
+ 
+ 
+ .midd_frame {
+   position: relative;
+   width: 970px;
+   height: 1260px;
+   margin-left: 30px;
+   margin-right: 27px;
+   display: flex;
+   flex-direction: column;
+   background-color: rergb(240, 240, 246)d;
+ }
+ .midd-top{
+   display: flex;
+   flex-direction: row;
+   background-color: white;
+   width: 971px;
+   height: 455px;
+   padding-top: 3px;
+ }
+.midd-top-left{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   padding-left: 58px;
+}
+.midd-top-job{
+   width: 500px;
+   height: 117px;
+   font-weight: 700;
+   font-size: 48px;
+   line-height: 50px;
+   padding-top: 40px;
+}
+.about_me{
+   font-size: 20px;
+   font-weight: 400;
+   width: 424px;
+   height: 85px;
+   padding-left: 10px;
+   color: rgb(118, 118, 118)
+}
+.midd-top-button{
+   width: 155px;
+   height: 50px;
+   background-color: rgb(255, 180, 0);
+   border-radius: 5px;
+   border: none;
+}
+.Steveni-rasmi{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   padding-top: 20px;
+}
+
+.midd-bottom{
+   width: 970px;
+   height: 653px;
+   margin-top: 140px;
+   display: flex; 
+   flex-direction: column;
+  
+}
+.midd-bottom-top{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.my-services{
+   font-size: 32px;
+   font-weight: 700;
+   width: 193px;
+   height: 40px;
+   margin-bottom: 25px;
+}
+.service{
+   display: flex;
+   justify-content: center;
+   height: 68px;
+   width: 438px;
+   color: rgb(118, 118, 118)
+}
+.midd-bottom-bottom{
+   margin-top: 50px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   background-color: white;
+}
+
+.lost{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.bott-columns{
+   display: flex;
+   flex-direction: row;
+   width: 310px;
+   height: 225px;
+}
+.bott-c{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 310px;
+   height: 225px;
+}
+.pictures{
+   width: 68px;
+   height: 68px;
+}
+.profession{
+   height: 22px;
+   font-weight: 500px;
+   font-size: 15px;
+   font-weight: bold;
+}
+.about-p{
+   padding-bottom: 30px;
+   font-weight: 400;
+   font-size: 13px;
+   height: 24px;
+}
+
+
+ .right_frame {
+   position: relative; 
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 108px;
+   height: 1315px;
+   background-color: white;
+ }
+
+ .href-1 {
+   margin-top: 43px;
+ }

@@ -1,0 +1,75 @@
+.left_icons {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-direction: row;
+   width: 238px;
+   margin-top: 19px;
+}
+
+.link_href {
+   text-decoration: none;
+   color: black;
+}
+.icon {
+   position: relative;
+   width: 25px;
+   height: 23px;
+   border-radius: 50%;
+   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.left-icons {
+   width: 24.99px;
+   height: 21.61px;
+   top: 278.39px;
+   left: 209.41px;
+   display: flex;
+   flex-direction: row;
+}
+.icon-1 {
+   position: relative;
+   left: 29.17%;
+   right: 27%;
+   margin-top: 5.86px;
+}
+
+
+
+
+
+
+
+
+
+<a class="link_href" href="">
+<div class="icon">
+  <img class="left_icon" src="/icons/Facebook.svg">
+</div>
+</a>
+<a class="link_href" href="">
+<div class="icon">
+  <img class="left_icon" src="/icons/Instagram.svg">
+</div>
+</a>
+<a class="link_href" href="">
+<div class="icon">
+  <img class="left_icon" src="/icons/Linkeding.svg">
+</div>
+</a>
+<a class="link_href" href="">
+<div class="icon">
+  <img class="left_icon" src="/icons/Twitter.svg">
+</div>
+</a>
+<a class="link_href" href="">
+<div class="icon">
+  <img class="left_icon" src="/icons/Youtube.svg">
+</div>
+</a>
+<a class="link_href" href="">
+<div class="icon">
+  <img class="left_icon" src="/icons/Dribbble.svg">
+</div>
+</a>

@@ -11,9 +11,8 @@ fs.readFile("database/user.json", "utf8", (err, data) => {
       console.log("ERROR", err);
    }  else {
       user = JSON.parse(data);  
-   }
-})
-
+   }     
+})                        
 // Expressning 4 ta bo'limi
 // 1: Entry codes  
 app.use(express.static("public"));

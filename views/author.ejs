@@ -1,1 +1,338 @@
-<div>Hello World. You are in Authors by Nurbek</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/main.css">
+    <link 
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+  </head>
+  
+  <body>
+    
+    <div class="frame">
+      <div class="main_frame">
+        <div class="left_frame">
+          <div class="left_frame-1">
+            <div class="left_1-1">
+              <img src="/images/Profile.png"
+              style="width: 156px;
+              height: 142px">
+            </div>
+            <div class="left_1-2"
+            style="margin-top: 22px;
+                  font-size: 18px;
+            "><%=user.name%></div>
+            <div class="left_1-3"
+            style="font-size: 15px;
+            color: rgb(118, 118, 118)">
+              <%=user.professional%>
+            </div> 
+            <div class="left_icons">
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img class="left_icon" src="/icons/Facebook.svg">
+                </div>
+                </a>
+                <a class="link_href" href="">
+                <div class="icon">
+                  <img class="left_icon" src="/icons/Instagram.svg">
+                </div>
+                </a>
+                <a class="link_href" href="">
+                <div class="icon">
+                  <img class="left_icon" src="/icons/Linkeding.svg">
+                </div>
+                </a>
+                <a class="link_href" href="">
+                <div class="icon">
+                  <img class="left_icon" src="/icons/Twitter.svg">
+                </div>
+                </a>
+                <a class="link_href" href="">
+                <div class="icon">
+                  <img class="left_icon" src="/icons/Youtube.svg">
+                </div>
+                </a>
+                <a class="link_href" href="">
+                <div class="icon">
+                  <img class="left_icon" src="/icons/Dribbble.svg">
+                </div>
+                </a>
+            </div>           
+              
+          </div>
+
+          <div class="left_marginer"></div>
+
+          <div class="left_frame-2">
+            <div class="left_2">
+              <div class="left_2_par" style="display: flex"
+              >Age:</div>
+              <div class="left_2_arg"><%=user.age%></div>
+            </div>
+            <div class="left_2">
+              <div class="left_2_par" style="display: flex;"
+              >Residence:</div>
+              <div class="left_2_arg"><%=user.residence%></div>
+            </div>
+            <div class="left_2">
+              <div class="left_2_par" style="display: flex;"
+              >Freelance:</div>
+              <div class="left_2_arg">Available</div>
+            </div>
+            <div class="left_2">
+              <div class="left_2_par" style="display: flex;"
+              >Address:</div>
+              <div class="left_2_arg"><%=user.address%></div>
+            </div>
+              
+          </div>
+          <div class="left_marginer"></div>
+
+          <div class="left_frame-3">
+
+            <div class="languages">Languages</div>
+
+            <div class="language">
+              <div class="which-language"><%=user.language[0]%></div>
+              <div>100%</div>
+            </div>
+              <div class="language-level" style="width: 220px"></div>
+
+            <div class="language">
+              <div class="which-language"><%=user.language[1]%></div>
+              <div>80%</div>
+            </div>
+            <div class="language-level" style="width: 195px "></div>
+
+            <div class="language">
+              <div class="which-language"><%=user.language[2]%></div>
+              <div>50%</div>
+            </div>
+            <div class="language-level" style="width: 110px;"></div>
+
+          </div>
+          <div class="left_marginer"></div> 
+
+          <div class="left_frame-4">
+              <div class="skills">Skills</div>
+              <div class="skillss">
+                <div class="which-skill"><%=user.skill[0]%></div>
+                <div>90%</div>
+              </div>
+              <div class="skill-level" style="width: 209px;"></div>
+
+              <div class="skillss">
+                <div class="which-skill"><%=user.skill[1]%></div>
+                <div>85%</div>
+              </div>
+              <div class="skill-level" style="width: 200px;"></div>
+
+              <div class="skillss">
+                <div class="which-skill"><%=user.skill[2]%></div>
+                <div>80%</div>
+              </div>
+              <div class="skill-level" style="width: 195px;"></div>
+
+              <div class="skillss">
+                <div class="which-skill"><%=user.skill[3]%></div>
+                <div>75%</div>
+              </div>
+              <div class="skill-level" style="width: 187px"></div>
+
+              <div class="skillss">
+                <div class="which-skill"><%=user.skill[4]%></div>
+                <div>85%</div>
+              </div>
+                <div class="skill-level"
+                style="width: 200px"></div>
+
+            </div>
+          <div class="left_marginer"></div>
+          
+          <div class="left_frame-5"> 
+            <div style="font-size: 18px;
+            font-weight: 500;
+            width: 95px;
+            height: 22px;
+            margin-bottom: 10px;">Extra Skills</div>
+            
+            <div class="left_5"> <img src="/icons/icons.svg"
+              style="margin-right: 15px;">
+              <div><%=user.extra_skills[0]%></div>
+            </div>
+            <div class="left_5"> <img src="/icons/icons.svg"
+              style="margin-right: 15px;">
+              <div><%=user.extra_skills[1]%></div>
+            </div>
+            <div class="left_5"> <img src="/icons/icons.svg"
+              style="margin-right: 15px;">
+              <div><%=user.extra_skills[2]%></div>
+            </div>
+            <div class="left_5"> <img src="/icons/icons.svg"
+              style="margin-right: 15px;">
+              <div><%=user.extra_skills[3]%></div>
+            </div>
+          </div>
+          <div class="left_marginer"></div>
+        </div>
+
+        <div class="midd_frame">
+          <div class="midd-top">
+            <div class="midd-top-left">
+              <p class="midd-top-job">Software engineer at IT Company</p>
+              <div class="about_me"><%=user.about_me%></div>
+              <div style="padding-bottom: 15px;"> 
+                <button class="midd-top-button">HIRE ME</button>
+              </div>
+            </div>
+            <div class="Steveni-rasmi">
+                <img src="/images/Steve.svg">
+            </div>
+          </div>
+
+          <div class="midd-bottom">
+            <div class="midd-bottom-top">
+              <div class="my-services">My Services</div>
+              <div class="service"><%=user.service_desc%></div>
+            </div>
+
+            <div class="midd-bottom-bottom">
+             <div class="lost">
+                <div class="bott-columns">
+
+                  <div class="bott-c">
+                    <div class="p-i">
+                      <img class="pictures" src="/btn_icon/Icons_coding.svg">
+                    </div>
+                    <p class="profession">Web Development</p>
+                    <div class="about-p">Blog, E-commerce</div>
+                  </div>
+                </div>
+                <div class="bott-columns">
+
+                  <div class="bott-c">
+                    <div class="p-i">
+                      <img class="pictures" src="/btn_icon/Icons_game-development.svg">
+                    </div>
+                    <p class="profession">Game Design</p>
+                    <div class="about-p">Character Design, Props & Objects</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="lost">
+                <div class="bott-columns">
+
+                  <div class="bott-c">
+                    <div class="p-i">
+                      <img class="pictures" src="/btn_icon/Icons_illustration.svg">
+                    </div>
+                    <p class="profession">UI/UX Design</p>
+                    <div class="about-p">Mobile App, Website Design</div>
+                  </div>
+                </div>
+                <div class="bott-columns">
+
+                  <div class="bott-c">
+                    <div class="p-i">
+                      <img class="pictures" src="/btn_icon/Icons_Photographer.svg">
+                    </div>
+                    <p class="profession">Photography</p>
+                    <div class="about-p">Portrait, Product Photography</div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="lost">
+                 <div class="bott-columns">
+ 
+                   <div class="bott-c">
+                     <div class="p-i">
+                       <img class="pictures" src="/btn_icon/Icons_Microphone.svg">
+                     </div>
+                     <p class="profession">Sound Design</p>
+                     <div class="about-p">Voice Over, Beat Making</div>
+                   </div>
+                 </div>
+                 <div class="bott-columns">
+ 
+                   <div class="bott-c">
+                     <div class="p-i">
+                       <p style="font-weight: bold;"> Advertising</p>
+                     </div>
+                     <p class="profession"
+                     style="font-size: 12px;
+                     width: 240px;
+                     font-weight: none;">Lorem Ipsum DOlor Sit Amet, Consectetur Adipiscing
+                      Elit. Vitae Nulla Diam In Ac Dictum A Urna Viverra Morbi
+                     </p>
+                     <div class="about-p" 
+                     style="font-size: 9px;
+                     padding-top: 30px;
+                     color: yellowgreen;
+                     ">ORDER NOW</div>
+                   </div>
+                 </div>
+               </div>
+
+                
+
+                
+
+            
+            </div>
+
+          </div>
+        </div>
+          
+
+
+        <div class="right_frame">
+          <div><a >
+              <img 
+              class="href-1"
+            style="padding-top: 7px;"
+            src="/btn_icon/Contrast.svg">
+            </a>
+          </div>
+          <div style="margin-top: 174px;
+          display: flex;
+          flex-direction: column;
+          ">
+            <a class="href-1">
+              <img src="/btn_icon/Home.svg">
+            </a>
+            <a class="href-1">
+              <img src="/btn_icon/Service.svg">
+            </a>
+            <a class="href-1">
+              <img src="/btn_icon/Cv.svg">
+            </a>
+            <a class="href-1">
+              <img src="/btn_icon/Portfolio.svg">
+            </a>
+            <a class="href-1">
+              <img src="/btn_icon/Blog.svg">
+            </a>
+            <a class="href-1">
+              <img src="/btn_icon/message.svg">
+            </a>
+            
+          </div>
+        </div>
+
+
+      </div>
+
+   </div>
+  </body>
+
+</html>
