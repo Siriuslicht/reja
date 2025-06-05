@@ -16,5 +16,3 @@ const letters = function(letter, word){
       }
       
 console.log(letters("o", "ononymous"));
-
-console.log("train.js");

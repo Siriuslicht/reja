@@ -98,3 +98,4 @@ maslahat(70, (err, data) => {
    }
 });
 */
+console.log("5/6/2025")
