@@ -20,7 +20,7 @@ app.set("view engine", "ejs");
 app.get("/hello", function(req, res){
    res.end(`<h1 style="background-color: red"> Hello World! by Stein</h1>`);
 
-});
+});  
 
 app.get("/gift", function(req, res){
    res.end(`<h1> GIFT page by Stein</h1>`);
