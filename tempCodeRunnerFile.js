@@ -22,19 +22,6 @@ app.get("/hello", function(req, res){
 
 });  
 
-app.get("/", function(req, res) {
-   res.render("reja");
-});
-
-app.post("/create-item", (req, res) => {
-   // code with db here
-});
-
-app.get("/", function (req, res) {
-   res.render("author");
-})
-
-
 app.get("/gift", function(req, res){
    res.end(`<h1> GIFT page by Stein</h1>`);
 

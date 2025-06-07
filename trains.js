@@ -1,3 +1,4 @@
+/*
 console.log("Maslahat otdushi");
 const list = [
    "yaxshi talaba boling", // 0-20
@@ -8,7 +9,6 @@ const list = [
    "endi dam oling" //60
 ]
 
-/*
 function maslahat(a, callback){
    if(typeof a !== 'number') callback("insert a number",null);
    else if (a <= 20) callback(null, list[0]);
@@ -98,4 +98,22 @@ maslahat(70, (err, data) => {
    }
 });
 */
-console.log("5/6/2025")
+
+
+// DEFINE
+function qoldiqliBolish(a, b, f, callback) {
+   if (b === 0) {
+      callback("Mahraj nolga teng bololmaydi", null);
+   } else {
+      callback(null, a % b + f);
+   }
+ }
+ 
+ // CALL
+ qoldiqliBolish(10, 3, 10, (err, data) => {
+   if (err) {
+     console.log("Error:", err);
+   } else {
+     console.log("Data:", data);
+   }
+ });
