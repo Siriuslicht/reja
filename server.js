@@ -1,10 +1,29 @@
 const http = require("http");
 const app = require("./app");
+const mongodb = require("mongodb")
 
-const server = http.createServer(app);
-let PORT = 3000;
-server.listen(PORT, function() {
-   console.log(
-      `The server is running successfully on port: ${PORT}, http://localhost:${PORT}`
-   );  
-});
+let db;
+const connectionString = "mongodb+srv://Licht:Siriuslicht2143@cluster0.tr1raml.mongodb.net/Reja";
+
+mongodb.connect(
+   connectionString, 
+   {
+      useNewUrlParser: true, 
+      useUnifiedTopology: true
+   }, 
+   (err, client) => {
+      if(err) console.log("ERROR on connection MongoDB");
+      else {
+         console.log("MongoDB connection succeeded")
+         module.exports = client;
+         
+         const app = require("./app");
+            const server = http.createServer(app);
+            let PORT = 3000;
+            server.listen ( PORT, function() {
+               console.log(
+                  `The server is running successfully on port: ${PORT}, http://localhost:${PORT}`
+               );  
+            });
+            }
+         });
