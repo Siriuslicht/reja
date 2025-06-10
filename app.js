@@ -51,7 +51,7 @@ app.post("/create-item",function(req, res){
 app.get('/', function(req , res){
     console.log('user enetred /');
     db.collection("plans")
-    .find(equalost)
+    .find()
     .toArray((err, data) => {
         if(err) {
             console.log(err)
