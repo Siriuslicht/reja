@@ -28,3 +28,25 @@ document.getElementById("create-form")
             console.log("ERROR! insert again")
          });
 });
+
+
+document.addEventListener("click", function(e){
+   console.log(e.target)
+   if(e.target.classList.contains("delete-me")) {
+      if(confirm("Are you sure you want to delete this item?")){
+         axios.post("/delete-item", {id: e.target.getAttribute("data-id")})
+         .then((response) => {
+            console.log(response.data);
+            e.target.parentElement.parentElement.remove();
+
+         })         
+         .catch((err) => {   
+            console.log("Try again!");
+         })
+      } 
+   }
+   if(e.target.classList.contains("edit-me")) {
+      alert("edit button pushed");
+   }
+})
+

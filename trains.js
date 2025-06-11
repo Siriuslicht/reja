@@ -97,7 +97,6 @@ maslahat(70, (err, data) => {
       console.log(data);
    }
 });
-*/
 
 
 // DEFINE
@@ -106,14 +105,29 @@ function qoldiqliBolish(a, b, f, callback) {
       callback("Mahraj nolga teng bololmaydi", null);
    } else {
       callback(null, a % b + f);
-   }
- }
- 
- // CALL
- qoldiqliBolish(10, 3, 10, (err, data) => {
+}
+}
+
+// CALL
+qoldiqliBolish(10, 3, 10, (err, data) => {
    if (err) {
-     console.log("Error:", err);
+      console.log("Error:", err);
    } else {
-     console.log("Data:", data);
-   }
- });
+      console.log("Data:", data);
+}
+});
+
+*/
+
+
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question("What is your name? ", function(name) {
+  console.log("Hello, " + name + "!");
+  rl.close();
+});
