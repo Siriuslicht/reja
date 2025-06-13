@@ -83,7 +83,7 @@
  .left_2 {
    display: flex;
    flex-direction: row;
-   justify-content: space-between;111
+   justify-content: space-between;
 }
 .left_2_par { 
    height: 24px;
