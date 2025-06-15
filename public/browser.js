@@ -6,8 +6,8 @@ function itemTemplate(item){
             class="list-group-item list-group-item-info d-flex align-items-center justify-content-between">
             <span class="item-text">${item.reja}</span>
             <div>
-                <button data-id="${item._id}" class="edit-me btn btn-secondary btn-sm mr-1">Ozgartirish</button>
-                <button data-id="${item._id}" class="delete-me btn btn-danger btn-sm">ochirish</button>
+                <button data-id="${item._id}" class="edit-me btn btn-secondary btn-sm mr-1">EDIT</button>
+                <button data-id="${item._id}" class="delete-me btn btn-danger btn-sm">DELETE</button>
             </div>
             </li>`;
 }
@@ -44,7 +44,6 @@ document.addEventListener("click", function(e){
          .then((response) => {
             console.log(response.data);
             e.target.parentElement.parentElement.remove();
-
          })         
          .catch((err) => {   
             console.log("Try again!");
@@ -61,7 +60,7 @@ document.addEventListener("click", function(e){
       );
       if(userInput){
          axios.post("/edit-item", {
-            id: e.target.getAttribute("data-id"),
+            id: e.target.getAttribute("data-id"), 
             new_input: userInput,
          })
          .then((response) => {
@@ -75,7 +74,7 @@ document.addEventListener("click", function(e){
          });
       }
    }
-})
+});
 
 
 

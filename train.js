@@ -10,14 +10,13 @@
    const count = {};// count nomli bosh array ochiladi.
  
    for (let char of str1) {
-         // tepadagi "for loop" turi: quyidagiga alternative
-      // char str1ning characterlarini har gal ishga tushgan
-      // bitta-bitta qolga ovoladi
+      // char str1ning characterlarini har gal ishga tushganda
+      // bitta-bitta qolga ovoladi  
                // endi (a || b) mantig'imiz ishga tushadi
                // a falsy bo'lsa, b ni qolga ol logici
                      // osha characterni qolga bittalab ob yurgan charni
                      // count oziga qabul qib oladi
-                     // so'ng, qavs conditionimiz osha char ozining ichida 
+                     // so'ng, qavs conditionimiz osha char countning ichida 
                      // bormi yoqmi tekshiradi. yoq bolganda 'undefined' ya'ni 
                      // falsy javob keladi, natijada 0 ni qolga kiritadi
    // pastda esa count
@@ -41,11 +40,11 @@
      // birdaniga operatsiya toxtab 
      // falseni beradi, agar str2ning hamma characterlari
      // count arrayiga teng bolsa, quyidagi qadam asosida
-     // ularni ochirib bittalab ochirib chiqadi
+     // ularni bittalab ochirib chiqadi
      count[char]--;
    }
-   // va bu manig'imiz hech qanday errorsiz
-   // ishini tugatsa, funksiyamiz return qaytaradi
+   // va bu mantig'imiz hech qanday errorsiz
+   // ishini tugatsa, funksiyamiz return true qaytaradi
  
    return true;
  }

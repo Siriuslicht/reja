@@ -12,18 +12,18 @@ mongodb.connect(
     useNewUrlParser:true, 
     UseUnifiedTopology:true
    }
-, (err, client) => {
+, (err, client) => { 
     if(err) console.log("ERROR on connection MongoDB");
-    else{
-        console.log("MogoDB connection succed");
+    else{  
+        console.log("MongoDB connection succed");
         module.exports = client;
          console.log(client); 
         const app = require("./app");
 
         const  server = http.createServer(app);
-        let PORT = 3000;
+        let PORT = 3007;
         server.listen(PORT, function() {
-        console.log(`The server is runing succesfuly on port: ${PORT}, http://localhost:${PORT}`)
+        console.log(`The server is running succesfuly on port: ${PORT}, http://localhost:${PORT}`)
         });          
     }
 })     

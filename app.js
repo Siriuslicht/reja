@@ -3,7 +3,7 @@ console.log("Web Serverni boshlash");
 const express = require("express");
 const app = express();
 const fs = require('fs');
-const { render } = require("ejs");
+    const { render } = require("ejs");
 
 let user; 
 fs.readFile("database/user.json", "utf-8", (err, data) => {
