@@ -1,5 +1,5 @@
 const http = require('http');
-const mongodb = require("mongodb")
+const mongodb = require("mongodb");
 console.log("passed here");
 
 let db;
