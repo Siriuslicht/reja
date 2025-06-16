@@ -1,3 +1,36 @@
+/*E-TASK: 
+
+Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
+MASALAN: getReverse("hello") return qilsin "olleh"
+*/
+
+function getReverse(str){ // bitta parametrga ega boladigan funksiya
+   let getChar = ""; // getChar nomli bosh string ochildi
+   for(let i = str.length - 1; i >= 0; i--){ 
+      // i ni str.lengthga - 1 tenglashimiz 
+      // i - str ga nima kiritilsa oshani
+      // oziga qa'bul qilib olishini korsatmoqda
+      // - 1 esa komputer doim 0 dan boshlab oqilishi 
+      // sababli qoyiladi.
+                              // i >= 0 ayni osha index
+                              // 0 dan boshlanganligi va i 
+                              // 0 indexgacha bora olishi uchun
+                              // ifodalandi
+    getChar += str[i]; // i(indexi) str ning qaysi bir characterini qabul qilsa
+                       // oshani getChar bo'sh string variableiga yuklash uchun
+                       // yozilgan
+                              
+   }
+   
+   return getChar;
+}
+
+const result = getReverse("Nurbek");
+console.log(result);
+
+
+/*
+
 // MITASK-D
 
 // Chatgptdan so'raldi.
@@ -53,14 +86,14 @@ let result = check2str("second breakfast", "break secondfast");
  console.log(result);
 
  console.log("=============");
-
+ 
  result = check2str("second breakfast", "break second fast");
  console.log(result);
-
-  
-// C-Task 
-// Masala berilishi!
-/*Shunday class tuzing tuzing nomi Shop, va uni 
+ 
+ 
+ // C-Task 
+ // Masala berilishi!
+ Shunday class tuzing tuzing nomi Shop, va uni 
 constructoriga 3 hil mahsulot pass bolsin, hamda 
 classning 3ta methodi bolsin, biri qoldiq, biri 
 sotish va biri qabul. Har bir method ishga tushgan 
