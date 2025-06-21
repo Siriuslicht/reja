@@ -28,7 +28,7 @@ app.use(express.urlencoded({extended: true}));
 app.set("views","views");
 app.set("view engine","ejs");
 
-//4: Runing code
+//4: Running code
 
 // edit me is connected to "last update was here" part!!!
 app.post("/edit-item", (req, res) => {
